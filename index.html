@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love May</title>
+    <link rel="stylesheet" href="./src/css/sweetalert2.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/sb-admin-2.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            min-height: 100vh;
+            background-image: url(./src/img/2214754.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container justify-content-center align-items-center d-flex " style="min-height: 100vh;">
+        <div class="d-flex flex-column align-items-center position-relative" style="flex-grow: 10;" id="content" data-exit="0" data-default-session="0">
+            <!-- <div class="card col-sm-10 col-md-8 col-lg-5 active" id="next" >
+                <div class="card-body row flex-column align-items-center ">
+                    <h2 class="text-center">Look at this</h2>
+                    <p class="text-center">Think before tapping</p>
+                    <img src="./src/img/photo_2022-04-06_20-05-06.jpg" style="width: 230px;" alt="">
+                    <p class="mt-5">Haloo sayang ini for you</p>
+                    <div class="d-flex">
+                        <button class="btn btn-danger" style="width: 100px;" data-tapping-count="0">Leave</button>
+                        <button class="btn btn-primary ml-2" style="width: 100px;" data-tapping-count="0">Oke</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-10 col-md-8 col-lg-5 " id="next">
+                <div class="card-body row flex-column align-items-center ">
+                    <h2 class="text-center">Question #1</h2>
+                    <p class="text-center">Think before tapping</p>
+                    <img src="./src/img/photo_2022-04-06_20-05-06.jpg" style="width: 230px;" alt="">
+                    <p class="mt-5">Sayang gak kamu sama aku?</p>
+                    <div class="d-flex">
+                        <button class="btn btn-danger leave" style="width: 100px;" data-tapping-count="4">Gak</button>
+                        <button class="btn btn-primary ml-2 next" style="width: 100px;" data-tapping-count="4">Sayang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-10 col-md-8 col-lg-5 " id="next" style="height: 90px;">
+                <div class="card-body row flex-column align-items-center ">
+                    <h2 class="text-center">The End</h2>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="d-flex">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div> -->
+<!-- 
+            <div class="card col-sm-10 col-md-8 col-lg-5 "id="sad" >
+                <div class="card-body row flex-column align-items-center ">
+                    <h2 class="text-center">IHHH Kok kamu leave sih</h2>
+                    <p class="text-center">Think before tapping</p>
+                    <img src="./src/img/photo_2022-04-06_20-05-06.jpg" style="width: 230px;" alt="">
+                    <p class="mt-5">Haloo sayang ini for you</p>
+                    <div class="d-flex">
+                        <button class="btn btn-primary ml-2 " style="width: 100px;">Oke</button>
+                    </div>
+                </div>
+            </div>
+             -->
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./src/js/main.js"></script>
+    
+    <!-- <script src="./src/js/sweetalert2.js"></script> -->
+    <!-- <script>
+        const swals = Swal.mixin({
+        allowOutsideClick:false,
+        cancelButtonColor: '#d33',
+        })
+        async function Single(image,text,confirmBtn){
+           await swals.fire({
+            showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                },
+                text: text,
+                imageUrl: image,
+                imageWidth: 200,
+                imageHeight: 200,
+                imageAlt: text,
+                confirmButtonText:confirmBtn,
+            })
+        }
+        async function LoadSwall(image,text,cancelBtn,confirmBtn){
+         await swals.fire({
+            text: text,
+            // imageUrl: 'https://c.tenor.com/UD3gBoJgqEgAAAAi/snuggles-caring.gif',
+            imageUrl: image,
+            imageWidth: 200,
+            imageHeight: 200,
+            showCancelButton: true,
+            confirmButtonText:confirmBtn,
+            cancelButtonText:cancelBtn,
+            reverseButtons: true
+           }).then(async(result) => {
+                if (!result.isConfirmed) {
+                    // swals.fire('https://c.tenor.com/j4XVPgtZZ7QAAAAi/peach-and.gif','Ayang jahat udah exit duluan','Biarin')
+                    // .then((result2)=>{
+
+                    //      if (!result2.isConfirmed) {
+                    //             return false
+                    //          }
+                    // })
+                    console.log("false")
+                    return 
+                }else{
+                    console.log('true')
+                }
+            })
+        }
+
+        async function Main(){
+           await swals.fire('Look at This!!')
+        //    let tmp =''
+            await LoadSwall(
+                'https://c.tenor.com/zPz6pCUuN2cAAAAC/peach-cat-and-goma-cat-wave.gif',
+                'Hallo sayangg',
+                'exit',
+                'next'
+            )
+            await LoadSwall(
+                'https://c.tenor.com/UD3gBoJgqEgAAAAi/snuggles-caring.gif',
+                'Sayang aku kangen sama kamu',
+                'exit',
+                'next'
+            )
+            await LoadSwall(
+                'https://c.tenor.com/j4XVPgtZZ7QAAAAi/peach-and.gif',
+                'Aku gak mau pisah sama kamu',
+                'Pisah',
+                'Tetap bersamanya'
+            )
+            // https://c.tenor.com/j4XVPgtZZ7QAAAAi/peach-and.gif
+           
+        }
+        // Main()
+    </script> -->
+</body>
+</html> 

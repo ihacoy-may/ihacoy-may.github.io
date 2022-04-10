@@ -1,0 +1,46 @@
+.container{
+    position: relative;
+    
+    background-color: rgba(214, 214, 214, 0.247);
+}
+@keyframes load  {
+    0%{
+        transform: translate(0px,-2500px);
+    }100%{
+
+        transform: translate(0px,0px);
+    }
+}
+.card{
+    position: relative;
+    transform: translate(0px,-2500px);
+    transition: 1s;
+    /* animation: load 1s forwards; */
+    scale: 0.9;
+    height: 500px;
+    display: flex !important;
+}
+.active{
+    transform: translate(0px,0px) !important;
+}
+.no-display{
+    display: none !important;
+}
+
+.re-height{
+    height: 130px !important;
+}
+@keyframes animateText1 {
+    0%{
+        transform: translate(0,10px);
+    }50%{
+        transform: translate(0,0px);
+    }80%{
+        transform: translate(0,-10px);
+    }100%{
+        transform: translate(0,10px);
+    }
+}
+.animate-text-1{
+    animation: animateText1 3s linear infinite;
+}
