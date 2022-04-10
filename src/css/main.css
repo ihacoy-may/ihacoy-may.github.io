@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
 .container{
     position: relative;
     
@@ -27,20 +29,58 @@
     display: none !important;
 }
 
+.bg-glass{
+    background-color: #ffffff5e !important;
+}
+
 .re-height{
-    height: 130px !important;
+    height: 390px !important;
 }
 @keyframes animateText1 {
     0%{
         transform: translate(0,10px);
-    }50%{
+    }40%{
         transform: translate(0,0px);
-    }80%{
+    }60%{
         transform: translate(0,-10px);
-    }100%{
+    }80%{
+        transform: translate(0,0px);
+    }
+    100%{
         transform: translate(0,10px);
     }
 }
 .animate-text-1{
     animation: animateText1 3s linear infinite;
 }
+
+
+
+
+
+  
+  .wush-animate {
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #858796, #fff, #858796);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
